@@ -170,10 +170,9 @@ http://localhost:5173
 
 ---
 
+
 # 🔗 Canlı Demo
-```
-https://your-demo-link.com
-```
+https://github.com/user-attachments/assets/2bcaa5ba-55b9-4d0d-8a64-d887b6a9bde2
 
 ---
 
