@@ -18,3 +18,12 @@ backend/**/*.db-wal
 *.suo
 .DS_Store
 Thumbs.db
+
+backend/**/client_secret*.json
+backend/**/*credentials*.json
+
+backend/**/logs/
+*.log
+
+.idea/
+.vscode/*.local.json
