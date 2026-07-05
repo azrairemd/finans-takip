@@ -164,11 +164,9 @@ http://localhost:5173
 ---
 
 # 📸 Ekran Görüntüleri
-```markdown
 ![Dashboard](screenshots/dashboard.png)
 
 ![Detail](screenshots/stock-detail.png)
-```
 
 ---
 
