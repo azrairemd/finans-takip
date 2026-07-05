@@ -1,0 +1,6 @@
+@FinansTakip.Infrastructure_HostAddress = http://localhost:5211
+
+GET {{FinansTakip.Infrastructure_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

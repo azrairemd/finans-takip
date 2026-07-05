@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-canvas: #fafafa;
+  --color-surface: #ffffff;
+  --color-surface-2: #f2f2f2;
+  --color-line: #e6e6e6;
+  --color-ink: #101010;
+  --color-ink-soft: #6b6b6f;
+  --color-ink-faint: #a6a6ab;
+
+  --color-canvas-dark: #0a0a0a;
+  --color-surface-dark: #141414;
+  --color-surface-2-dark: #1c1c1c;
+  --color-line-dark: #262626;
+  --color-ink-dark: #f2f2f2;
+  --color-ink-soft-dark: #9a9a9f;
+  --color-ink-faint-dark: #5f5f66;
+
+  --color-rise: #17a34a;
+  --color-rise-soft: #d6f3e1;
+  --color-fall: #dc2626;
+  --color-fall-soft: #fbdede;
+  --color-neutral: #9ca3af;
+}
+
+:root {
+  color-scheme: light;
+}
+:root.dark {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.dark body {
+  background-color: var(--color-canvas-dark);
+  color: var(--color-ink-dark);
+}
+
+::selection {
+  background: var(--color-ink);
+  color: var(--color-canvas);
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+@keyframes flash-green {
+  0% { background-color: var(--color-rise-soft); }
+  100% { background-color: transparent; }
+}
+@keyframes flash-red {
+  0% { background-color: var(--color-fall-soft); }
+  100% { background-color: transparent; }
+}
+.dark .flash-green { animation: flash-green-dark 0.9s ease-out; }
+.dark .flash-red { animation: flash-red-dark 0.9s ease-out; }
+.flash-green { animation: flash-green 0.9s ease-out; }
+.flash-red { animation: flash-red 0.9s ease-out; }
+
+@keyframes flash-green-dark {
+  0% { background-color: rgba(23,163,74,0.25); }
+  100% { background-color: transparent; }
+}
+@keyframes flash-red-dark {
+  0% { background-color: rgba(220,38,38,0.28); }
+  100% { background-color: transparent; }
+}
