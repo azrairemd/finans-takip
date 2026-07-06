@@ -162,6 +162,17 @@ http://localhost:5173
 ```
 
 ---
+## Bilinen Sorunlar
+
+Bazı ağlarda (özellikle bazı Türkiye ISS'lerinde) `stream.binance.com` 
+adresine doğrudan erişim engellenebiliyor ve websocket bağlantısı 
+1006 hatasıyla kopuyor. Bu Binance'in bir kısıtlaması değil, ağ/ISS 
+seviyesinde bir engelleme gibi görünüyor.
+
+Bu proje herhangi bir VPN veya proxy yönlendirmesi yapmaz/önermez. 
+Bağlantı sorunu yaşıyorsanız, ağınızın `stream.binance.com` adresine 
+erişimi olup olmadığını kontrol edin
+---
 
 # 📸 Ekran Görüntüleri
 ![Dashboard](screenshots/dashboard.png)
