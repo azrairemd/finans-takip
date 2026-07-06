@@ -197,6 +197,8 @@ https://github.com/user-attachments/assets/2bcaa5ba-55b9-4d0d-8a64-d887b6a9bde2
 - [ ] Fiyat geçmişi raporları
 
 ---
+## 📄 Lisans
+Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
 
 # 📝 Notlar
 
